@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 10% 25%;
 
-    --primary: 120 61% 50%; /* Forest green #32CD32 */
+    --primary: 120 61% 40%; /* Darker Forest green */
     --primary-foreground: 120 60% 97%; /* Very light green/off-white for contrast */
 
     --secondary: 60 30% 85%; /* Lighter beige */
@@ -30,11 +30,11 @@
 
     --border: 60 20% 80%; /* Beige-gray border */
     --input: 60 20% 88%; /* Light beige-gray input background */
-    --ring: 120 61% 45%; /* Slightly darker green for rings */
+    --ring: 120 61% 35%; /* Slightly darker green for rings */
 
     --radius: 0.5rem;
 
-    --chart-1: 120 61% 50%;
+    --chart-1: 120 61% 40%; /* Adjusted to match new primary */
     --chart-2: 197 71% 73%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
@@ -61,7 +61,7 @@
     --popover: 20 10% 12%;
     --popover-foreground: 60 10% 95%;
 
-    --primary: 120 61% 50%;
+    --primary: 120 61% 40%; /* Darker Forest green */
     --primary-foreground: 120 60% 97%;
 
     --secondary: 20 10% 20%;
@@ -78,9 +78,9 @@
 
     --border: 20 10% 25%;
     --input: 20 10% 25%;
-    --ring: 120 61% 45%;
+    --ring: 120 61% 35%; /* Slightly darker green for rings */
 
-    --chart-1: 120 61% 50%;
+    --chart-1: 120 61% 40%; /* Adjusted to match new primary */
     --chart-2: 197 71% 73%;
 
     --sidebar-background: 240 5.9% 10%;

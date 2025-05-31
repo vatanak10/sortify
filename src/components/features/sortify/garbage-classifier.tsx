@@ -3,6 +3,7 @@
 
 import type { ChangeEvent } from 'react';
 import { useState, useEffect } from 'react';
+import * as React from 'react'; // Added React import
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -32,10 +33,10 @@ interface BinIconProps {
 }
 
 const BinIconDisplay: React.FC<BinIconProps> = ({ icon: Icon, label, isHighlighted, categorySlug }) => (
-  <div 
+  <div
     className={`flex flex-col items-center p-4 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 ${
-      isHighlighted 
-        ? 'bg-accent text-accent-foreground shadow-xl scale-110 border-2 border-accent-foreground/50' 
+      isHighlighted
+        ? 'bg-accent text-accent-foreground shadow-xl scale-110 border-2 border-accent-foreground/50'
         : 'bg-card-foreground/5 text-foreground border border-transparent'
     }`}
     aria-label={`${label} bin ${isHighlighted ? 'selected' : ''}`}
@@ -117,7 +118,7 @@ export function GarbageClassifier() {
       setIsLoading(false);
     }
   };
-  
+
   const categoryDetails: Record<string, { IconComp: React.ElementType, label: string }> = {
     recyclable: { IconComp: Recycle, label: "Recyclable" },
     'non-recyclable': { IconComp: Trash2, label: "Non-Recyclable" },
@@ -202,7 +203,7 @@ export function GarbageClassifier() {
                 <p className="font-medium">Results will be shown here once an item is classified.</p>
               </div>
             )}
-            
+
             {isLoading && (
               <div className="flex flex-col items-center justify-center py-10 space-y-3 text-primary">
                 <Loader2 className="h-12 w-12 animate-spin" />
@@ -231,7 +232,7 @@ export function GarbageClassifier() {
                     <span className="text-sm font-semibold text-primary">{Math.round(classificationResult.confidence * 100)}%</span>
                   </div>
                 </div>
-                
+
                 <div>
                   <Label className="text-sm font-medium text-muted-foreground">Reasoning</Label>
                   <p className="text-sm mt-1 p-3 bg-muted/50 rounded-md border border-border">{classificationResult.reason}</p>

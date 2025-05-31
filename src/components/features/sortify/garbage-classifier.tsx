@@ -146,12 +146,13 @@ export function GarbageClassifier() {
             <div className="space-y-2">
               <Label htmlFor="garbage-image" className="text-base font-medium">Choose Image File</Label>
               <div className="flex items-center space-x-2">
+             
                 <Input
                   id="garbage-image"
                   type="file"
                   accept="image/jpeg,image/png,image/webp,image/gif"
                   onChange={handleFileChange}
-                  className="text-sm file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
+                  className="text-sm file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 h-13"
                   aria-describedby="file-constraints"
                 />
               </div>
